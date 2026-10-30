@@ -1,0 +1,14 @@
+{
+  "name": "luax-bridge-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebSocket relay for an authorized Unity test application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ws": "^8.18.0"
+  }
+}
