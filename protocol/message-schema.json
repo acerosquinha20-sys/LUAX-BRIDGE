@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "token",
+    "payload"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "hello",
+        "command",
+        "telemetry",
+        "status"
+      ]
+    },
+    "token": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "examples": [
+    {
+      "type": "command",
+      "token": "change-me",
+      "payload": {
+        "feature": "showNames",
+        "enabled": true
+      }
+    },
+    {
+      "type": "telemetry",
+      "token": "change-me",
+      "payload": {
+        "targets": [
+          {
+            "id": "dummy-1",
+            "x": 0.2,
+            "y": 0.4,
+            "visible": true
+          }
+        ]
+      }
+    }
+  ]
+}
